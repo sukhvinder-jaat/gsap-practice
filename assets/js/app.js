@@ -38,15 +38,15 @@ tl2.from("#page2 .card", {
   },
 });
 
-t12.to("#headingScroll .scrollHeading", {
-  transform: "translate(-100%)",
+gsap.to("#page1 h2", {
+  transform: "translateX(-80%)",
   scrollTrigger: {
-    trigger: "#headingScroll .scrollHeading",
+    trigger: "#page1 h2",
     scroller: "body",
     markers: true,
-    start: "top 0%",
+    start: "top 40%",
     end: "top -200%",
-    scrub: 2,
+    scrub: true,
     pin: true,
   },
 });
