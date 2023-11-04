@@ -39,11 +39,11 @@ tl2.from("#page2 .card", {
 });
 
 gsap.to("#page1 h2", {
-  transform: "translateX(-80%)",
+  transform: "translateX(-90%)",
   scrollTrigger: {
     trigger: "#page1 h2",
     scroller: "body",
-    markers: true,
+    // markers: true,
     start: "top 40%",
     end: "top -200%",
     scrub: true,
